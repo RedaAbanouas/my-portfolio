@@ -3,13 +3,27 @@
 
 :root {
     --font-grotesk: "Space Grotesk", sans-serif;
-    --bg-dark: #0A192F;
     --bg-lighter-dark: #112240;
     --bg-darker: #071527;
     --highlight-color: #4ED8D5;
     --yellow-highlight: #c79306;
 }
-
+.bg-nav{
+    background-color: #0A192F;
+}
 .font-grotesk {
     font-family: var(--font-grotesk);
   }
+.bg-dark {
+    background: linear-gradient(-45deg,#112240,#08172b);
+}
+
+.bg-dark-alt {
+    background: linear-gradient(-45deg,#17305a,#112240);
+}
+.bg-card {
+    background-color: #17305a;
+}
+.bg-card-dark {
+    background-color: #0A192F;
+}

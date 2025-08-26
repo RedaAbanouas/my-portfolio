@@ -1,24 +1,24 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { skills } from './data/Skills.js';
+import { skill_ml, skill_backend, skill_frontend } from '../data/Skills.js';
 import SkillCard from './ui/SkillCard.jsx';
 
 export default function Skills() {
     return (
-        <section className='flex flex-col justify-center items-center bg-[var(--bg-dark)] py-24'>
+        <section className='flex flex-col justify-center items-center bg-dark py-24'>
             {/* Section Title */}
-            <motion.h1 className="text-gray-100 font-bold text-3xl sm:text-4xl font-mono mb-10 text-center"
+            <motion.h1 className="text-gray-100 font-bold text-3xl sm:text-4xl font-mono mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}><span className='text-[var(--highlight-color)]'>2.</span>Skills</motion.h1>
+            viewport={{ once: true, amount: 0.9 }}
+            transition={{ duration: 0.5 }}><span className='text-[var(--highlight-color)]'>3.</span>Skills</motion.h1>
 
             {/* Skills section */}
-            <div className='max-w-[1400px] w-full px-8 grid grid-cols-1 md:grid-cols-2'>
+            <div className='max-w-[1600px] w-full px-12 gap-20 flex flex-col'>
                 {/* Skills Display */}
-                <div className='flex flex-col justify-center'>
-                    <SkillCard title="AI & Machine Learning" skills={skills} />
-                </div>
+                <SkillCard title='AI & Machine Learning' skills={skill_ml}></SkillCard>
+                <SkillCard title='Back-end & Databases' skills={skill_backend}></SkillCard>
+                <SkillCard title='Front-end Development' skills={skill_frontend}></SkillCard>
 
                
             </div>

@@ -7,7 +7,7 @@ export default function Hero() {
     const isAvailable = true;
 
     return (
-        <section className='min-h-screen flex flex-col justify-center items-center bg-gradient-to-t from-[var(--bg-dark)] via-[var(--bg-dark)] to-[var(--bg-darker)] pb-16'>
+        <section className='min-h-screen flex flex-col justify-center items-center bg-dark pb-16'>
             <div className='max-w-[1400px] min-h-[70vh] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 justify-between items-center px-8 mt-32'>
                 {/* Left Content */}
                 <div className='text-center md:text-left'>

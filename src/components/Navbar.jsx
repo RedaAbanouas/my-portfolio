@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <nav
-    className="fixed min-w-screen m-0 p-0 bg-[var(--bg-dark)] z-50"
+    className="fixed min-w-screen m-0 p-0 bg-nav z-50"
     >
       <div className="max-w-[1400px] mx-auto px-8 py-6 flex justify-between items-center">
         {/* Logo */}
