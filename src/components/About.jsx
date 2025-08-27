@@ -1,22 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa6';
 
 export default function About() {
     return (
-        <section className='flex justify-center items-center bg-dark-alt'>
-            <div className='max-w-[1400px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 justify-between items-center px-8 py-24'>
+        <section id='about' className='flex flex-col justify-center items-center bg-dark-alt py-24'>
+            <div className='max-w-[1400px] grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-8 justify-between items-center px-8'>
                 {/*About Left content */}
                 <div className='text-left'>
                     <motion.h1 className="text-gray-100 font-bold text-3xl sm:text-4xl font-mono mb-10"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.9 }}
+                    viewport={{ once: true, amount: 0.6 }}
                     transition={{ duration: 0.5 }}><span className='text-[var(--highlight-color)]'>2.</span>About me</motion.h1>
 
                     <motion.p className="text-gray-400 text-md md:text-lg font-mono mb-8"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }} 
-                    viewport={{ once: true, amount: 0.9 }}
+                    viewport={{ once: true, amount: 0.6 }}
                     transition={{ duration: 0.5}}>
                         Hello! I'm Reda, a developer with a passion for building things that live on the internet and in the cloud. 
                         My interest in technology started back when I tried to build my first Web application. That experience taught me 
@@ -30,13 +31,34 @@ export default function About() {
                 </div>
 
                 {/*About Right content Photo */}
-                <motion.div className='rounded-full p-6 bg-card-dark w-fit mx-auto'
+                <motion.div className='rounded-full p-6 bg-card-dark w-fit mx-auto shadow-xl'
                 initial={{ opacity: 0, x: 30}}
                 whileInView={{ opacity: 1, x: 0}}
-                viewport={{ once: true, amount: 0.9}}
-                transition={{ duration: 0.5, delay: 0.3}}>
+                viewport={{ once: true, amount: 0.6}}
+                transition={{ duration: 0.5}}>
                     <img src="/photo.png" alt="Photo" className='w-80 h-auto rounded-full' />
                 </motion.div>
+            </div>
+            <div className="flex gap-20 mt-16 items-center">
+                {/* LinkedIn */}
+                <a 
+                  href="https://www.linkedin.com/in/reda-abanouas-a51807291/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-2xl transition-colors cursor-pointer bg-[var(--highlight-color)] border-2 border-[var(--highlight-color)] hover:bg-[#0A192F] hover:text-[var(--highlight-color)]"
+                >
+                  <FaLinkedinIn size={28} />
+                </a>
+
+                {/* GitHub */}
+                <a 
+                  href="https://github.com/RedaAbanouas" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-2xl transition-colors cursor-pointer bg-[var(--highlight-color)] border-2 border-[var(--highlight-color)] hover:bg-[#0A192F] hover:text-[var(--highlight-color)]"
+                >
+                  <FaGithub size={28} />
+                </a>
             </div>
         </section>
     );

@@ -7,7 +7,7 @@ export default function Hero() {
     const isAvailable = true;
 
     return (
-        <section className='min-h-screen flex flex-col justify-center items-center bg-dark pb-16'>
+        <section id='home' className='min-h-screen flex flex-col justify-center items-center bg-dark pb-16'>
             <div className='max-w-[1400px] min-h-[70vh] grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 justify-between items-center px-8 mt-32'>
                 {/* Left Content */}
                 <div className='text-center md:text-left'>
@@ -48,8 +48,8 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.6 }}>
-                        <Button variant='primary' className='flex items-center space-x-2'><span>View my Projects</span> <ArrowDown size={20}></ArrowDown></Button>
-                        <Button variant='outline' className='flex items-center space-x-2'><span>Download CV</span><Download size={20}></Download></Button>
+                        <a href="#projects"><Button variant='primary' className='flex items-center space-x-2'><span>View my Projects</span> <ArrowDown size={20}></ArrowDown></Button></a>
+                        <a href='/cv.pdf' download="Reda_Abanouas_CV.pdf"><Button variant='outline' className='flex items-center space-x-2'><span>Download CV</span><Download size={20}></Download></Button></a>
                     </motion.div>
 
                 </div>

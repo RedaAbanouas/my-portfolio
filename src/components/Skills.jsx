@@ -5,12 +5,12 @@ import SkillCard from './ui/SkillCard.jsx';
 
 export default function Skills() {
     return (
-        <section className='flex flex-col justify-center items-center bg-dark py-24'>
+        <section id='skills' className='flex flex-col justify-center items-center bg-dark py-24'>
             {/* Section Title */}
             <motion.h1 className="text-gray-100 font-bold text-3xl sm:text-4xl font-mono mb-16 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.9 }}
+            viewport={{ once: true, amount: 0.6 }}
             transition={{ duration: 0.5 }}><span className='text-[var(--highlight-color)]'>3.</span>Skills</motion.h1>
 
             {/* Skills section */}

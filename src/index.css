@@ -27,3 +27,7 @@
 .bg-card-dark {
     background-color: #0A192F;
 }
+
+html {
+    scroll-behavior: smooth;
+  }

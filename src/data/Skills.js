@@ -1,14 +1,8 @@
-import { FaRobot, FaPython, FaLanguage, FaBrain, FaJava } from "react-icons/fa6";
-import { SiTensorflow, SiScikitlearn, SiMysql, SiFlask, SiDjango } from "react-icons/si";
-import { BsDatabaseFillGear } from "react-icons/bs";
-import { MdOutlineWeb } from "react-icons/md";
-
 export const skill_titles = [
-  { title: "AI & Machine Learning", icon: FaRobot },
-  { title: "Backend & Databases", icon: BsDatabaseFillGear },
-  { title: "Front-end Development", icon: MdOutlineWeb }
+  { title: "AI & Machine Learning"},
+  { title: "Backend & Databases"},
+  { title: "Front-end Development"}
 ]
-
 
 export const skill_ml = [
   { id: 1, name: "Python", src: "/skill_img/Python.png"},
